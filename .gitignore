@@ -16,3 +16,6 @@
 !/log/.keep
 /tmp
 .DS_Store
+.idea
+.secret
+/config/locales/secrets.yml
