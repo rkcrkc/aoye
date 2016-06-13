@@ -39,14 +39,43 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 	padding: 20px 0;
 }
 
-#logo-wrap {
-	width: 50px;
-	margin: 10px 10px;
+/* Header */
+
+header {
+	height: 200px;
 }
+
+#logo-wrap {	
+	margin: 0 auto;
+	text-align: center;
+}
+
+#logo-wrap img {
+	width: 400px;
+	padding: 20px;
+}
+
+#social /* Social media icons */{
+	width: 120px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+#social img {
+	width: 24px;
+}
+
+#social img:hover {
+	opacity: 0.8;
+}
+
+/* Body */
+
+
+/* Footer */
 
 footer {
 	background: url(footer_lodyas.png);
-	background-color: grey;
 	width: 100%;
 	padding: 20px 40px;
 }
@@ -144,4 +173,5 @@ footer a:hover {
      box-sizing: border-box; /* IE */
 }
 
+@import 'bootstrap-sprockets';
 @import 'bootstrap';

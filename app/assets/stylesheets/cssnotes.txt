@@ -1,0 +1,219 @@
+/*----------------------------------------------------------------------------- 
+1. BASE STYLES  
+-----------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+}
+
+.align-right {
+	float: right;
+}
+
+.align-left {
+	float: left;
+}
+
+.divider {
+	height: 1px;
+	width: 45%;
+	border-color: silver;
+	margin: 0 auto;
+}
+
+/*----------------------------------------------------------------------------- 
+2. SECTION ELEMENTS  
+-----------------------------------------------------------------------------*/
+
+.pagecontainer /* Body container */{
+	margin: 0 auto 0 auto;
+}
+
+.section {
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+#homecontainer {
+	background-color: #FD6B57;
+}
+
+#home {
+	max-width: 650px;
+	margin: 0 auto 0 auto;
+	padding: 0 0 35px 0px;
+	color: white;
+}
+
+#home .col-md-4 {
+	padding: 0px;
+	min-width: 0;
+}
+
+#home .col-md-8 {
+	padding: 0px;
+	min-width: 0;
+}
+
+#home .row {
+	margin: 0;
+}
+
+#home .divider {
+	border-color: white;
+	width: 70%;
+}
+
+.profilepic {
+	border-radius: 50%;
+	max-height: 180px;
+	max-width: 180px;
+	border: 2px solid white;
+	margin-top: 45px;
+}
+
+#social /* Social media icons */{
+	width: 180px;
+	margin: 20px auto 10px auto;
+	text-decoration: none;
+}
+
+#social img {
+	height: 32px;
+}
+
+#social img:hover {
+	opacity: 0.8;
+}
+
+#intro {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#ventures {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#aboutme {
+}
+
+#bucketlist {
+	max-width: 800px;
+	margin: 0 auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 40px;
+}
+
+#contactcontainer {
+	background-color: #FD6B57;
+}
+
+#contact {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+#contactpic {
+	border-radius: 50%;
+	height: 210px;
+	width: 210px;
+	border: 2px solid white;
+	margin-top: 20px;
+	margin-bottom: 25px;
+}
+
+#contact #social {
+	margin-bottom: 25px;
+}
+
+footer {
+	background: url(footer_lodyas.png);
+	background-color: grey;
+	width: 100%;
+	padding: 20px 40px;
+}
+
+footer p {
+	font-size: 16px;
+	color: silver;
+	margin: 0;
+}
+
+footer a {	
+}
+
+footer a:hover {
+	text-decoration: none;
+}
+
+/*----------------------------------------------------------------------------- 
+3. BACKGROUND PANELS  
+-----------------------------------------------------------------------------*/
+
+.aboutme-row {
+	display: inline-block;
+}
+
+.aboutme-panel-top {
+	width: 240px;
+	height: 550px;
+	margin: 30px 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.aboutme-panel-bottom {
+	width: 240px;
+	height: 520px;
+	margin: 30px 30px;
+	display: inline-block;
+	position: relative;
+}
+
+.aboutme-panel-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.aboutme-panel-content {
+}
+
+.aboutme-pic {	
+	border-radius: 50%;
+	height: 240px;
+	width: 240px;
+	margin-bottom: 10px;
+}
+
+.aboutme-pic-wrap {
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.aboutme-pic-description {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border-radius: 50%;
+	height: 240px;
+	width: 240px;
+	padding-top: 100px;
+	background: rgba(0,0,0,0.3);
+	color: white;
+
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.3s ease-in;
+}
+
+.aboutme-pic-wrap:hover .aboutme-pic-description {
+	visibility: visible;
+	opacity: 1;
+}
