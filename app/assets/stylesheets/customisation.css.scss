@@ -1,8 +1,11 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
 
 /* BASE STYLES ====================== */
 
-$font-family-sans-serif: "Raleway", Helvetica, sans-serif;
+$font-family-sans-serif: "Raleway", "Press Start 2P", "VT323", "Quicksand", Helvetica, sans-serif;
 
 /*----------------------------------------------------------------------------- 
 1. BASE STYLES  
@@ -42,7 +45,7 @@ $font-family-sans-serif: "Raleway", Helvetica, sans-serif;
 /* Header */
 
 header {
-	height: 200px;
+	height: 95px;
 }
 
 #logo-wrap {	
@@ -51,22 +54,30 @@ header {
 }
 
 #logo-wrap img {
-	width: 400px;
+	width: 400px; /* 320px for vertical logo */
 	padding: 20px;
+	opacity: 0.6;
 }
 
 #social /* Social media icons */{
-	width: 120px;
+	width: 50px;
 	margin: 0 auto;
 	text-decoration: none;
 }
 
+#social .col-xs-6 {
+	padding: 0;
+}
+
 #social img {
 	width: 24px;
+	opacity: 0.5;
+	padding: 0;
 }
 
 #social img:hover {
-	opacity: 0.8;
+	opacity: 0.9;
+	transition: opacity 0.3s ease-in;
 }
 
 /* Body */
@@ -77,11 +88,11 @@ header {
 footer {
 	background: url(footer_lodyas.png);
 	width: 100%;
-	padding: 20px 40px;
+	padding: 0 35px;
 }
 
 footer p {
-	font-size: 16px;
+	text-align: left;
 	color: silver;
 	margin: 0;
 }

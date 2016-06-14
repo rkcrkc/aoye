@@ -1,13 +1,19 @@
 <div id="social">
   <div class="row">
-    <div class="col-xs-4">
-      <%= link_to (image_tag "instagram_black.png"), "http://cn.linkedin.com/in/ryancrocombe", target: "_blank" %>
+    <div class="col-xs-6">
+      <%= link_to (image_tag "ig-glyph.png"), "http://www.instagram.com/_aoye", target: "_blank" %>
     </div>
-    <div class="col-xs-4">
-      <%= link_to (image_tag "instagram_black.png"), "http://www.instagram.com/__ryanryan", target: "_blank" %>
-    </div>
-    <div class="col-xs-4">
-      <%= link_to (image_tag "instagram_black.png"), "http://www.soundcloud.com/ryanryan-1", target: "_blank" %>
-    </div>
+	<a tabindex="0" type="button" class="col-xs-6" role="button" data-toggle="popover" data-placement="bottom" data-content="ryan@aoye.co">
+	  <%= image_tag "email-glyph.png" %>
+	</a>
+
+
+
   </div>
 </div>
+
+<script>
+	$( document ).ready(function() {
+	  $('[data-toggle="popover"]').popover();
+	});
+</script>

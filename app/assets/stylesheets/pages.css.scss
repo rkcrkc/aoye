@@ -58,26 +58,25 @@ h4 /* "Passionate about..." text */{
 }
 
 h5 /* Text for startup industries */{
-	font-family: 'Courier New';
+	font-family: 'Quicksand';
 	font-size: 24px;
-	font-weight: 400;
-	line-height: 1.5;
 	letter-spacing: 4px;
-	text-transform: uppercase;
 	margin: 10px 0 0 0;
 	text-align: center;
-	color: grey;
+	color: #707070;
 }
 
 h6 /* Text for aboutme titles */{
-	font-weight: 300;
+	font-family: 'Quicksand';
 	font-size: 12px;
-	margin: 10px 0 20px 0;
-	color: grey;
+	letter-spacing: 4px;
+	margin: 20px 0;
+	color: #848484;
 }
 
 p /* Regular content */{
-	font-size: 20px;
+	font-family: 'Quicksand';
+	font-size: 10px;
 	font-weight: 300;
 	line-height: 1.5;
 	align: center;
