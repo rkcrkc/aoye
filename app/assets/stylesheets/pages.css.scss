@@ -23,10 +23,6 @@ h1 /* Banner title */{
 	text-transform: uppercase;
 	margin-top: 30px;
 	margin-bottom: 20px;
-
-	@media (max-width: 600px) {
-		font-size: 42px;
-	}
 }
 
 h2  /* Section title text */{
@@ -62,7 +58,6 @@ h5 /* Text for startup industries */{
 	font-size: 24px;
 	letter-spacing: 4px;
 	margin: 10px 0 0 0;
-	text-align: center;
 	color: #707070;
 }
 
@@ -79,7 +74,6 @@ p /* Regular content */{
 	font-size: 10px;
 	font-weight: 300;
 	line-height: 1.5;
-	align: center;
 	color: #494949;
 }
 

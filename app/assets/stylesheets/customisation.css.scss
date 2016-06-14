@@ -46,6 +46,10 @@ $font-family-sans-serif: "Raleway", "Press Start 2P", "VT323", "Quicksand", Helv
 
 header {
 	height: 95px;
+
+		@media (max-width: 600px) {
+		height: 50px;
+		}
 }
 
 #logo-wrap {	
@@ -95,6 +99,10 @@ footer p {
 	text-align: left;
 	color: silver;
 	margin: 0;
+
+		@media (max-width: 600px) {
+		text-align: center;
+	}
 }
 
 footer a {	
