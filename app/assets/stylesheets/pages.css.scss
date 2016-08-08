@@ -31,38 +31,28 @@ h2  /* Section title text */{
 	margin: 0;
 	padding: 12px 18px 20px 18px;
 	text-align: center;
-	color: #FD6B57;
+	color: #707070;
 	letter-spacing:3px;
 }
 
 h3  /* Bucket list text */{
-	font-size: 28px;
-	font-weight: 300;
-	line-height: 1.5;
-	letter-spacing: 3px;
-	color: #FD6B57;
 }
 
 h4 /* "Passionate about..." text */{
-	font-size: 35px;
-	font-weight: 300;
-	line-height: 1.5;
-	margin: 0;
-	padding: 12px 18px 28px 18px;
-	text-align: center;
-	color: #FD6B57;
 }
 
 h5 /* Text for startup industries */{
-	font-family: 'Quicksand';
+	font-family: 'Quicksand', 'daty3';
 	font-size: 24px;
+	font-weight: 300;
 	letter-spacing: 4px;
 	margin: 10px 0 0 0;
 	color: #707070;
 }
 
 h6 /* Text for aboutme titles */{
-	font-family: 'Quicksand';
+	font-family: 'Quicksand', 'daty3';
+	font-weight: 300;
 	font-size: 12px;
 	letter-spacing: 4px;
 	margin: 20px 0;
