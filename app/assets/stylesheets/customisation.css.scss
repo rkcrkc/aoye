@@ -67,6 +67,13 @@ header {
 	text-align: center;
 }
 
+#launching-soon {
+	padding: 10px;
+			@media (max-width: 400px) {
+		font-size: 20px;
+		}
+}
+
 #social /* Social media icons */{
 	width: 50px;
 	margin: 0 auto;
