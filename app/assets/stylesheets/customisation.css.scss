@@ -43,7 +43,7 @@ $gutter: 30px;
 -----------------------------------------------------------------------------*/
 
 .pagecontainer /* Body container */{
-	background-image: url(hero-2-sm.png);
+	background-image: image-url("hero-2-sm.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
