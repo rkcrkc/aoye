@@ -1,9 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
-@import url(https://fonts.googleapis.com/css?family=VT323);
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
+/* @import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css); */
 
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
@@ -43,7 +41,7 @@ $gutter: 30px;
 -----------------------------------------------------------------------------*/
 
 .pagecontainer /* Body container */{
-	background-image: image-url("hero-2-sm.png");
+	background-image: image-url("hero-1-sm.png");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -163,7 +161,6 @@ header {
 /* Footer */
 
 footer {
-	background: url(footer_lodyas.png);
 	width: 100%;
 	padding: 10px 0 	0;
 	margin-bottom: 0;
