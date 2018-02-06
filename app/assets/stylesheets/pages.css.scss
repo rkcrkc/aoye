@@ -11,7 +11,7 @@ a:hover, a:visited, a:link, a:active {
 }
 
 body {
-	text-align: center;
+	text-align: left;
 }
 
 h1 /* Banner title */{
@@ -41,12 +41,12 @@ h3  /* Bucket list text */{
 h4 /* "Passionate about..." text */{
 }
 
-h5 /* Text for startup industries */{
+h5 /*  */{
 	font-family: 'Quicksand', 'daty3';
 	font-size: 24px;
 	font-weight: 300;
 	letter-spacing: 4px;
-	margin: 10px 0 0 0;
+	margin: 0 0 20px;
 	color: #707070;
 }
 
@@ -63,10 +63,24 @@ p /* Regular content */{
 	font-family: 'Quicksand';
 	font-size: 10px;
 	font-weight: 300;
-	line-height: 1.5;
+	line-height: 1.75;
+	letter-spacing: 0.2em;	
 	color: #494949;
+	text-transform: uppercase;
+	margin-bottom: 12px;
 }
 
+a {
+	text-decoration: none;
+	transition: color 0.2s linear;
+	-o-transition: color 0.2s linear;
+	-moz-transition: color 0.2s linear;
+	-webkit-transition: color 0.2s linear;	
+	&:hover, &:focus {
+		text-decoration: none;
+		color: black;
+	}
+}
 
 .aboutme-panel-content p {
 	font-weight: 300;

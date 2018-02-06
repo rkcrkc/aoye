@@ -5,9 +5,16 @@
 @import url(http://fonts.googleapis.com/earlyaccess/cwtexyen.css);
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300);
 
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
 /* BASE STYLES ====================== */
 
 $font-family-sans-serif: "Quicksand", "daty3", Helvetica, sans-serif;
+$text-grey: #707070; /* 112,112,112 */
+$light-grey: #E2E2E2;
+$gutter: 30px;
+
 
 /*----------------------------------------------------------------------------- 
 1. BASE STYLES  
@@ -36,7 +43,18 @@ $font-family-sans-serif: "Quicksand", "daty3", Helvetica, sans-serif;
 -----------------------------------------------------------------------------*/
 
 .pagecontainer /* Body container */{
-	margin: 0 auto 0 auto;
+	background-image: url(hero-2-sm.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	max-width: 100%;
+	padding: $gutter;
+
+	@media (max-width: 600px) {
+		background-image: url(https://cdn-images-1.medium.com/max/2000/1*uyM_bXVHCgx0F8-IEdFz5g.png);
+		background-color: $light-grey;
+	}
+
 }
 
 .section {
@@ -47,24 +65,45 @@ $font-family-sans-serif: "Quicksand", "daty3", Helvetica, sans-serif;
 /* Header */
 
 header {
-	height: 155px;
+	height: 0;
 
 		@media (max-width: 600px) {
-		height: 30px;
+		height: 0;
 		}
 }
 
-#logo-wrap {	
-	margin: 0 auto;
-	text-align: center;
+.logo-wrap {
+	text-align: left;
 }
 
-#logo-wrap img {
-	max-width: 400px; /* 320px for vertical logo */
+.logo-wrap img {
+	max-width: 260px; /* 320px for vertical logo */
 	width: 100%;
-	padding: 30px;
-	opacity: 0.53;
+	padding: $gutter*2 0 $gutter*1.5;
+	opacity: 0.9;
+
+	@media (max-width: 600px) {
+		padding: $gutter*1.5 0;	
+	}
+
+}
+
+.desktop-logo {
+	@media (max-width: 600px) {
+		display: none;
+	}	
+}
+
+.mobile-logo {
+	display: none;
+	margin: 0 auto;
 	text-align: center;
+
+	@media (max-width: 600px) {
+		display: block;
+		opacity: 0.53;
+	}
+
 }
 
 #launching-soon {
@@ -74,28 +113,51 @@ header {
 		}
 }
 
-#social /* Social media icons */{
-	width: 50px;
-	margin: 0 auto;
-	text-decoration: none;
-}
-
-#social .col-xs-6 {
-	padding: 0;
-}
-
-#social img {
-	width: 24px;
-	opacity: 0.5;
-	padding: 0;
-}
-
-#social img:hover {
-	opacity: 0.9;
-	transition: opacity 0.3s ease-in;
-}
 
 /* Body */
+
+.content-section {
+	max-width: 720px;
+	padding: $gutter;
+	background-color: rgba(112,112,112,0.5);
+	border-radius: 10px;
+	text-align: justify;
+	margin-bottom: $gutter/2;
+
+	h1, h2, h3, h4, h5, h6, p {
+		color: white;
+	}
+
+	a {
+		color: $light-grey;
+	}
+
+	h5 {
+		@media (max-width: 600px) {
+			text-align: center;
+		}
+	}
+
+	.social /* Social media icons */{
+		margin: 0 -5px;
+		text-decoration: none;
+
+		a {
+			color: white;
+			padding: 5px;
+			color: white;
+			opacity: 1;
+
+			&:hover, &:focus {
+				color: $light-grey;
+			}
+		}
+
+		@media (max-width: 600px) {
+			text-align: center;
+		}	
+	}	
+}
 
 
 /* Footer */
@@ -103,16 +165,20 @@ header {
 footer {
 	background: url(footer_lodyas.png);
 	width: 100%;
-	padding: 10px 20px;
+	padding: 10px 0 	0;
+	margin-bottom: 0;
 }
 
 footer p {
-	text-align: center;
-	color: silver;
+	color: white;
 	margin: 0;
+	font-size: 9px;
+	letter-spacing: 0.05em;
+	opacity: 0.8;
 
 		@media (max-width: 600px) {
 		text-align: center;
+		opacity: 0.5;
 	}
 }
 

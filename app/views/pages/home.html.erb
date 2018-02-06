@@ -4,29 +4,49 @@
 
 	<div class="pagecontainer">
 
-		<div id="logo-wrap">
-			<%= image_tag "logo-aoye.png"%>
+		<div class="logo-wrap desktop-logo">
+			<%= image_tag "logo-aoye-inv.png"%>
 		</div>
 
-		<h5 id="launching-soon">Launching soon<!--<br><br> 敬請期待 --></h5>
+		<div class="logo-wrap mobile-logo">
+			<%= image_tag "logo-aoye-inv.png"%>
+		</div>
+
+		<div class="content-section">
+			<h5>JOIN US</h5>
+
+			<p>We’re on a mission to bring East and West closer together through street culture.</p>
+
+			<p><%= link_to "88Rising", "https://www.youtube.com/channel/UCZW5lIUz93q_aZIkJPAC0IQ", target: "_blank" %> are doing it with hip hop; we’re here to do it with fashion.</p>
+
+			<p>With long-term roots in China and South Korea, we’re surrounded by street brands and style movements making waves locally.</p>
+
+			<p>Language & distance keeps this talent locked inside the country, but we want to change that. We want to share the best of North Asia with the rest of the world.</p>
+
+			<p>We’re now looking for creative people to help us implement our vision and create something big.</p>
+
+			<p>If you’re interested in being part of the movement, get in touch via Instagram or email (links below).</p>
+
+			<p>Ryan & Fred</p>
+
+	    	<%= render 'social' %>			
+		</div>
+
+		<!-- 
+		<h5 id="launching-soon">Launching soon <br><br> 敬請期待 </h5> -->
 
 		<br>
 
-	    <%= render 'social' %>
+
 
 		<!---
 		<h6>CREATED IN CHINA | 中國創造</h6>	
 		-->
 
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	<footer>
+		<p>© 2018 Aoye Ltd</p>
+	</footer>
 
 	</div>
 	
-	<footer>
-		<p>© 2016 Aoye Ltd</p>
-	</footer>
+
