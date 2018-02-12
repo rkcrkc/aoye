@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   root 'pages#home'
 
   # Let’s encrypt
-  get ‘/.well-known/acme-challenge/:id’ => ‘pages#letsencrypt’
+  get '/.well-known/acme-challenge/:id' => 'pages#letsencrypt'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
