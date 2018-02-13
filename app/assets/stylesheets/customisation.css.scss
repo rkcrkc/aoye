@@ -40,7 +40,7 @@ $gutter: 30px;
 2. SECTION ELEMENTS  
 -----------------------------------------------------------------------------*/
 
-.pagecontainer /* Body container */{
+.pagecontainer-desktop /* Body container */{
 	background-image: image-url("hero-1-sm.png");
 	background-size: cover;
 	background-position: center;
@@ -49,25 +49,41 @@ $gutter: 30px;
 	padding: $gutter;
 
 	@media (max-width: 600px) {
-		background-image: url(https://cdn-images-1.medium.com/max/2000/1*uyM_bXVHCgx0F8-IEdFz5g.png);
-		background-color: $light-grey;
+		display: none;
 	}
 
+}
+
+.pagecontainer-mobile {
+	background-color: black;	
+
+	header {
+		background-image: url(https://cdn-images-1.medium.com/max/2000/1*uyM_bXVHCgx0F8-IEdFz5g.png);
+		background-attachment: scroll;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top;
+
+		padding: $gutter * 2;
+	}
+
+	@media (min-width: 601px) {
+		display: none;
+	}
+
+	hr {
+		width: 2em;
+		display: block;
+		border: 0;
+		border-top: 2px solid #222222;
+		margin: 0 auto;	
+		padding: 0;
+	}	
 }
 
 .section {
 	margin: 0 auto;
 	padding: 20px 0;
-}
-
-/* Header */
-
-header {
-	height: 0;
-
-		@media (max-width: 600px) {
-		height: 0;
-		}
 }
 
 .logo-wrap {
@@ -86,22 +102,11 @@ header {
 
 }
 
-.desktop-logo {
-	@media (max-width: 600px) {
-		display: none;
-	}	
-}
-
 .mobile-logo {
-	display: none;
 	margin: 0 auto;
 	text-align: center;
-
-	@media (max-width: 600px) {
-		display: block;
-		opacity: 0.53;
-	}
-
+	display: block;
+	opacity: 0.8;
 }
 
 #launching-soon {
@@ -130,11 +135,17 @@ header {
 		color: $light-grey;
 	}
 
-	h5 {
-		@media (max-width: 600px) {
+	@media (max-width: 600px) {
 			text-align: center;
-		}
-	}
+			background-color: black;
+			border-radius: 0px;
+			margin-bottom: 0;
+
+			h5 {
+				text-align: center;
+			}
+		}	
+	}	
 
 	.social /* Social media icons */{
 		margin: 0 -5px;
@@ -151,10 +162,7 @@ header {
 			}
 		}
 
-		@media (max-width: 600px) {
-			text-align: center;
-		}	
-	}	
+
 }
 
 
@@ -162,9 +170,15 @@ header {
 
 footer {
 	width: 100%;
-	padding: 10px 0 	0;
+	padding: 10px 0 0;
 	margin-bottom: 0;
+
+	@media (max-width: 600px) {
+		margin: 0;
+		padding: $gutter 0;
+	}
 }
+
 
 footer p {
 	color: white;
@@ -173,9 +187,11 @@ footer p {
 	letter-spacing: 0.05em;
 	opacity: 0.8;
 
-		@media (max-width: 600px) {
+	@media (max-width: 600px) {
 		text-align: center;
 		opacity: 0.5;
+		background-color: black;
+		color: $text-grey;
 	}
 }
 
