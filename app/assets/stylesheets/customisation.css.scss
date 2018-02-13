@@ -97,7 +97,6 @@ $gutter: 30px;
 	opacity: 0.9;
 
 	@media (max-width: 600px) {
-		padding: $gutter*1.5 0;	
 	}
 
 }
@@ -106,7 +105,7 @@ $gutter: 30px;
 	margin: 0 auto;
 	text-align: center;
 	display: block;
-	opacity: 0.8;
+	opacity: 1;
 }
 
 #launching-soon {
@@ -140,6 +139,7 @@ $gutter: 30px;
 			background-color: black;
 			border-radius: 0px;
 			margin-bottom: 0;
+			padding-top: $gutter/2;
 
 			h5 {
 				text-align: center;
