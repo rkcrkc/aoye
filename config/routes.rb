@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   root 'pages#home'
 
+  get 'jalil' => 'pages#jalil'
+
   # Let’s encrypt
   get '/.well-known/acme-challenge/:id' => 'pages#letsencrypt'
 
